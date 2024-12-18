@@ -1,5 +1,6 @@
 import React from "react";
 import { HiShoppingCart } from "react-icons/hi2";
+import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   return (
@@ -9,31 +10,30 @@ const Navbar = () => {
           <div className="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
             HN-Coffee.
           </div>
-          <div className="menu basis-3/6">
-            <ul className="flex items-center justify-end gap-x-8 uppercase text-sm text-gray-500 font-medium">
-              <li className="top-menu-item">
-                <a href="#">Home</a>
-              </li>
-              <li className="top-menu-item">
-                <a href="#">Our products</a>
-              </li>
 
-              <li className="top-menu-item">
-                <a href="#">About</a>
-              </li>
-              <li className="top-menu-item">
-                <a href="#">Contact</a>
-              </li>
-              <li className="top-menu-item">
-                <a href="#">StyleGuide</a>
-              </li>
-              <li>
-                <a href="#"></a>
-              </li>
-            </ul>
-          </div>
+          <ul className="hidden basis-3/6 lg:flex lg:items-center lg:justify-end lg:gap-x-8 uppercase text-sm text-gray-500 font-medium">
+            <li className="top-menu-item">
+              <a href="#">Home</a>
+            </li>
+            <li className="top-menu-item">
+              <a href="#">Our products</a>
+            </li>
 
-          <ul className="cart basis-1/6 justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+            <li className="top-menu-item">
+              <a href="#">About</a>
+            </li>
+            <li className="top-menu-item">
+              <a href="#">Contact</a>
+            </li>
+            <li className="top-menu-item">
+              <a href="#">StyleGuide</a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+
+          <ul className="flex cart basis-3/6 lg:basis-1/6 justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
             <li className="">
               <a
                 href="#"
@@ -45,6 +45,10 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+
+          <div className="basis-1/6 ct-page-icons cursor-pointer lg:hidden flex items-center px-2 sm:px-4">
+            <IoMdMenu id="toggle-top-menu" />
+          </div>
         </nav>
       </header>
     </>
