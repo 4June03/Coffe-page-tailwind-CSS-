@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="root">
-      <div className="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-400 h-[100vh]">
+      <div className="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-400 h-[100vh] font-Karla">
         <header>
           <Navbar />
         </header>

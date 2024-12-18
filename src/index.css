@@ -16,6 +16,8 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 /* tạo class để apply cho menu item */
 .top-menu-item {
   @apply cursor-pointer hover:text-gray-800 py-1 relative after:absolute
