@@ -1,11 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="root">
-      <div className="content-wrapper">
-        <header>header</header>
+      <div className="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-400 h-[100vh]">
+        <header>
+          <Navbar />
+        </header>
         <main>
           <div className="slider">slider</div>
           <div className="story">story</div>
